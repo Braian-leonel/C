@@ -1,0 +1,43 @@
+#include <stdio.h>
+#define EMP 2
+typedef struct empleados{
+	
+	char nombre[30];
+	char apellido[30];
+	int edad;
+	float salario;	
+		
+}empleado_t[EMP];
+
+
+int main()
+{ 
+	int i;
+	 empleado_t em;
+	
+	printf("Ingrese el nombre del empleado: \n");
+	scanf("%s", em[EMP].nombre);
+	printf("Ingrese el apellido del empleado: \n");
+	scanf("%s", em[EMP].apellido);
+	printf("Ingrese la edad del empleado: \n");
+	scanf("%d", &em[EMP].edad);
+	printf("Ingrese el salario del empleado: \n");
+	scanf("%f", &em[EMP].salario);
+	
+	for (i = 0; i<EMP; ++i){
+		printf("el nombre del empleado es: %s \n", em[EMP].nombre);
+		printf("El apellido del empleado es: %s\n", em[EMP].apellido);	
+		printf("La edad del empleado es: %d \n", em[EMP].edad);
+		printf("El salario del empleado es: %f.2\n", em[EMP].salario);
+		printf("");
+		
+		
+	
+	}
+	
+	
+	
+	return 0;
+}
+
+
